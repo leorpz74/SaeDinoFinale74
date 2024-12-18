@@ -1,0 +1,212 @@
+﻿<Window
+    x:Class="MyGame.Optionsregle"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Options et Règles"
+    Width="1000"
+    Height="600"
+    KeyDown="Window_KeyDown"
+    ResizeMode="NoResize"
+    ShowInTaskbar="False"
+    WindowStartupLocation="CenterScreen">
+
+    <Grid>
+        <Image Source="/img/ecran_jeu_final.jpg" Stretch="Fill" />
+        <Image
+            Margin="472,-30,-103,75"
+            RenderTransformOrigin="0.5,0.5"
+            Source="/img/parchemin.png"
+            Stretch="Fill">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform />
+                    <SkewTransform />
+                    <RotateTransform Angle="90.057" />
+                    <TranslateTransform />
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+
+        <TextBox
+            Width="350"
+            Height="54"
+            Margin="292,0,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="Transparent"
+            BorderThickness="0"
+            FontSize="40"
+            FontWeight="Bold"
+            Text="Options et Règles"
+            TextAlignment="Center" />
+
+        <TextBox
+            x:Name="Gauche_deplacement"
+            Width="168"
+            Height="20"
+            Margin="135,155,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="Transparent"
+            BorderThickness="0"
+            FontSize="14"
+            FontWeight="Bold"
+            Text="-Q pour aller à gauche"
+            TextElement.Foreground="Black" />
+
+        <TextBox
+            x:Name="Droite_deplacement"
+            Width="168"
+            Height="22"
+            Margin="135,128,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="Transparent"
+            BorderThickness="0"
+            FontSize="14"
+            FontWeight="Bold"
+            RenderTransformOrigin="0.971,-1.771"
+            Text="-D pour aller à droite"
+            TextElement.Foreground="Black" />
+
+        <TextBox
+            x:Name="deplacement"
+            Width="232"
+            Height="42"
+            Margin="135,54,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="Transparent"
+            BorderThickness="0"
+            FontSize="30"
+            FontWeight="Bold"
+            Text="Touche de jeux"
+            TextAlignment="Center" />
+        <TextBox
+            Name="Tirer"
+            Width="398"
+            Margin="135,104,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="Transparent"
+            BorderThickness="0"
+            FontSize="14"
+            FontWeight="Bold"
+            Text="-J pour Tirer (tir possible toute les 3 secondes)"
+            TextElement.Foreground="Black"
+            TextWrapping="Wrap" />
+        <TextBox
+            Name="quitter"
+            Width="168"
+            Margin="135,204,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="Transparent"
+            BorderThickness="0"
+            FontSize="14"
+            FontWeight="Bold"
+            Text="-E pour quitter "
+            TextElement.Foreground="Black"
+            TextWrapping="Wrap" />
+        <TextBox
+            Name="Sauter"
+            Width="168"
+            Margin="135,180,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="Transparent"
+            BorderThickness="0"
+            FontSize="14"
+            FontWeight="Bold"
+            Text="-Espace pour Sauter"
+            TextElement.Foreground="Black"
+            TextWrapping="Wrap" />
+        <TextBox
+            x:Name="Regle"
+            Width="232"
+            Height="42"
+            Margin="672,54,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="Transparent"
+            BorderThickness="0"
+            FontSize="30"
+            FontWeight="Bold"
+            Text=" Les Régles"
+            TextAlignment="Center" />
+        <TextBlock
+            Width="253"
+            Height="293"
+            Margin="672,113,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            FontSize="15"
+            FontWeight="Bold"
+            TextElement.Foreground="Black"
+            TextWrapping="Wrap"><Run Text="Votre but est de survivre le plus longtemps à des hordes de dinosaures complétements déchainées contre vous." /><LineBreak /><Run Text="Votre seul moyen de survie est d'éviter de vous faire toucher par les dinosaures terrestre et volant, pour y parvenir vous serez munis d'un pistolet qui vous permettra de tuer les  dinosaures terrestre. " /><LineBreak /><Run Text="ATTENTION il vous sera totalement impossible de tuer les dinosaures volants alors regarder bien au-dessus de vous !" /></TextBlock>
+        <Image
+            Margin="408,128,424,319"
+            Source="/img/dino_volant_droite.png"
+            Stretch="Fill" />
+        <Image
+            Margin="32,292,666,95"
+            Source="/img/dino_petit_droite.png"
+            Stretch="Fill" />
+
+       <!-- <Slider 
+            x:Name="VolumeSlider"
+            Width="254"
+            Height="41"
+            Margin="0,350,0,0"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Background="{x:Null}"
+            IsSnapToTickEnabled="True"
+            Maximum="1"
+            Minimum="0"
+            ValueChanged="VolumeSlider_ValueChanged"
+            TickFrequency="0.1"
+            Value="0.5"  >
+            <Slider.Foreground>
+            <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+            <GradientStop Color="Black" />
+            <GradientStop Offset="1" Color="White" />
+            </LinearGradientBrush>
+            </Slider.Foreground>
+            <Slider.BorderBrush>
+            <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+            <GradientStop Color="Black" />
+            <GradientStop Offset="1" Color="#FF0E0000" />
+            </LinearGradientBrush>
+            </Slider.BorderBrush>
+           </Slider> -->
+
+        <TextBox
+            Width="218"
+            Height="53"
+            Margin="0,292,0,0"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Background="Transparent"
+            BorderThickness="0"
+            FontSize="30"
+            FontWeight="Bold"
+            Text="Volume son"
+            TextAlignment="Center"
+            TextElement.Foreground="Black"
+            TextWrapping="Wrap" />
+        <TextBox 
+    Name="Jouer"
+    Width="199"
+    HorizontalAlignment="Left"
+    VerticalAlignment="Top"
+    Background="Transparent"
+    BorderThickness="0"
+    FontSize="14"
+    FontWeight="Bold"
+    Text="-P pour commncer à jouer  "
+    TextElement.Foreground="Black"
+    TextWrapping="Wrap" Margin="135,228,0,0" />
+
+    </Grid>
+</Window>

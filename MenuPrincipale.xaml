@@ -1,0 +1,54 @@
+﻿<Window
+    x:Class="MyGame.MenuPrincipale"
+ xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+ Title="Jeu Vidéo"
+ Width="600     "
+ Height="600"
+ ResizeMode="NoResize"
+ WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Image Source="/img/ecran_acceuil.jpg" Stretch="Fill" />
+
+        <Button
+         x:Name="Jouer"
+         Margin="190,241,182,230"
+         Background="Transparent"
+         Click="JouerDinoGame_Click"
+         RenderTransformOrigin="0.511,0.546">
+
+            <Image
+             Width="198"
+             RenderTransformOrigin="0.511,0.546"
+             Source="/img/Bouton_Star.PNG"
+             Stretch="Fill" />
+        </Button>
+
+        <Button
+         x:Name="optionregle"
+         Margin="190,352,182,124"
+         Background="Transparent"
+         Click="Optionregle_Click"
+         RenderTransformOrigin="0.511,0.546">
+
+            <Image
+             Height="86"
+             RenderTransformOrigin="0.511,0.546"
+             Source="/img/bouton_option.PNG"
+             Stretch="Fill" />
+        </Button>
+
+        <Button
+         x:Name="quitter"
+         Margin="190,460,182,10"
+         Click="Quitter_Click"
+         RenderTransformOrigin="0.511,0.546">
+            <Image
+             RenderTransformOrigin="0.511,0.546"
+             Source="/img/bouton_Exit.PNG"
+             Stretch="Fill" />
+        </Button>
+
+    </Grid>
+
+</Window>

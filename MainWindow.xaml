@@ -1,0 +1,63 @@
+﻿<Window
+    x:Class="MyGame.DinoGame"
+ xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+ x:Name="jeu_dino"
+ Width="1200"
+ Height="500"
+ KeyDown="jeu_dino_KeyDown"
+ KeyUp="jeu_dino_KeyUp"
+ ResizeMode="NoResize"
+ WindowStartupLocation="CenterScreen">
+
+    <Canvas x:Name="fond_canvas">
+        <Image
+         x:Name="fond_jeu"
+         Width="1200"
+         Height="484"
+         HorizontalAlignment="Left"
+         VerticalAlignment="Center"
+         Source="/img/ecran_jeu_final.jpg"
+         Stretch="Fill" />
+        <Image
+         x:Name="imgPersoDroite"
+         Canvas.Left="586"
+         Canvas.Top="270"
+         Width="44"
+         Height="66"
+         HorizontalAlignment="Left"
+         VerticalAlignment="Center"
+         Source="/img/personnage_droite.png"
+         Stretch="Fill" />
+        <Image
+         x:Name="balle"
+         Canvas.Left="1267"
+         Canvas.Top="155"
+         Width="22"
+         Height="10"
+         HorizontalAlignment="Left"
+         VerticalAlignment="Top"
+         
+         Stretch="Fill" />
+        <Image
+         Canvas.Left="947"
+         Width="253"
+         Height="137"
+         HorizontalAlignment="Left"
+         VerticalAlignment="Center"
+         Source="/img/parchemin.png"
+         Stretch="Fill" />
+        <Label
+         x:Name="lblScore"
+         Canvas.Left="1000"
+         Canvas.Top="42"
+         Width="154"
+         Height="46"
+         HorizontalAlignment="Left"
+         VerticalAlignment="Top"
+         Content="Score : "
+         FontSize="20"
+         FontWeight="Bold" />
+    </Canvas>
+
+</Window>

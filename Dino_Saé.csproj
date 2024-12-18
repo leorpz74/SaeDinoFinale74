@@ -1,0 +1,82 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="img\bouton_Exit 1.PNG" />
+    <None Remove="img\bouton_Exit.PNG" />
+    <None Remove="img\bouton_option 1.PNG" />
+    <None Remove="img\bouton_option.PNG" />
+    <None Remove="img\Bouton_Star 1.PNG" />
+    <None Remove="img\Bouton_Star.PNG" />
+    <None Remove="img\dino_grand_droite 1.png" />
+    <None Remove="img\dino_grand_droite.png" />
+    <None Remove="img\dino_grand_gauche 1.png" />
+    <None Remove="img\dino_grand_gauche.png" />
+    <None Remove="img\dino_petit_droite 1.png" />
+    <None Remove="img\dino_petit_droite.png" />
+    <None Remove="img\dino_petit_gauche 1.png" />
+    <None Remove="img\dino_petit_gauche.png" />
+    <None Remove="img\dino_volant_droite 1.png" />
+    <None Remove="img\dino_volant_droite.png" />
+    <None Remove="img\dino_volant_gauche 1.png" />
+    <None Remove="img\dino_volant_gauche.png" />
+    <None Remove="img\ecran_acceuil 1.jpg" />
+    <None Remove="img\ecran_acceuil.jpg" />
+    <None Remove="img\ecran_jeu_final 1.jpg" />
+    <None Remove="img\ecran_jeu_final.jpg" />
+    <None Remove="img\laser_petitDroit 1.png" />
+    <None Remove="img\laser_petitDroit.png" />
+    <None Remove="img\laser_petitGauche 1.png" />
+    <None Remove="img\laser_petitGauche.png" />
+    <None Remove="img\parchemin.png" />
+    <None Remove="img\personnage_droite 1.png" />
+    <None Remove="img\personnage_droite.png" />
+    <None Remove="img\personnage_gauche 1.png" />
+    <None Remove="img\personnage_gauche.png" />
+    <None Remove="sons\cri_volant.m4a" />
+    <None Remove="sons\gameover.wav" />
+    <None Remove="sons\laser.mp3" />
+    <None Remove="sons\laser_1.wav" />
+    <None Remove="sons\saut.wav" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="img\bouton_Exit.PNG" />
+    <Resource Include="img\bouton_option.PNG" />
+    <Resource Include="img\Bouton_Star.PNG" />
+    <Resource Include="img\dino_grand_droite.png" />
+    <Resource Include="img\dino_grand_gauche.png" />
+    <Resource Include="img\dino_petit_droite.png" />
+    <Resource Include="img\dino_petit_gauche.png" />
+    <Resource Include="img\dino_volant_droite.png" />
+    <Resource Include="img\dino_volant_gauche.png" />
+    <Resource Include="img\ecran_acceuil.jpg" />
+    <Resource Include="img\ecran_jeu_final.jpg" />
+    <Resource Include="img\laser_petitDroit.png" />
+    <Resource Include="img\laser_petitGauche.png" />
+    <Resource Include="img\parchemin.png" />
+    <Resource Include="img\personnage_droite.png" />
+    <Resource Include="img\personnage_gauche.png" />
+    <Resource Include="sons\cri_volant.m4a" />
+    <Resource Include="sons\gameover.wav" />
+    <Resource Include="sons\laser_1.wav" />
+    <Resource Include="sons\saut.wav" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="sons\theme_fond.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="sons\theme_fond_1.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
